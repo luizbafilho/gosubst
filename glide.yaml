@@ -1,0 +1,17 @@
+package: github.com/luizbafilho/gosubst
+import:
+- package: github.com/Masterminds/sprig
+  version: ^2.9.0
+- package: github.com/pelletier/go-toml
+  version: ^0.4.0
+- package: github.com/pkg/errors
+  version: ^0.8.0
+- package: github.com/spf13/cobra
+- package: github.com/spf13/pflag
+  version: 9ff6c6923cfffbcd502984b8e0c80539a94968b7
+- package: gopkg.in/yaml.v2
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
