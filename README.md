@@ -3,7 +3,7 @@
 `gosubst` is an `envsubst` on steroids. Receives a template file in the `stdin` replaces all variables and sends it to `stdout`.
 
 ## Installing
-Find the latest gosubst for your platform on the [releases](https://github.com/luizbafilho/gosubst/releases) page
+Get the latest gosubst for your platform on the [releases](https://github.com/luizbafilho/gosubst/releases) page
 ```
 curl -o /usr/local/bin/gosubst -sSL https://github.com/luizbafilho/gosubst/releases/download/<version>/gosubst_<os>-<arch>
 chmod +x /usr/local/bin/gosubst
