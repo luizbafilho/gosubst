@@ -96,7 +96,7 @@ $ echo "generated-id: {{uuidv4}}" | gosubst
 generated-id: 00a315b7-c846-4751-b2ee-b50eb5359bac
 
 $ echo "generated-sha: {{sha256sum .Env.USER | trunc 7}}" | gosubst
-generated-sha: 4b569e80caa6ba1d7416f4aa2177a85e316afe1142d606bcfd6b70af0c0bf666
+generated-sha: 4b569e8
 ```
 
 Check it out all functions available: https://github.com/Masterminds/sprig#functions
