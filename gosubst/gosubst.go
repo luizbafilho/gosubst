@@ -2,7 +2,7 @@ package gosubst
 
 import (
 	"encoding/json"
-	"html/template"
+	"text/template"
 	"io"
 	"io/ioutil"
 	"os"
@@ -58,7 +58,7 @@ func (s Subst) Render() error {
 		return err
 	}
 
-	tmpl, err := template.New("base").Funcs(sprig.FuncMap()).Parse(string(text))
+	tmpl, err := template.New("base").Option("missingkey=error").Funcs(sprig.TxtFuncMap()).Parse(string(text))
 	if err != nil {
 		return err
 	}

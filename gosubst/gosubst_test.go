@@ -8,17 +8,17 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func createValuesFile(t *testing.T) {
+func createValuesFile(t *testing.T, s string) {
 	f, err := os.Create("/tmp/values.toml")
 	assert.Nil(t, err)
 
-	_, err = f.WriteString("foo=\"bar\"\n")
+	_, err = f.WriteString(s)
 	assert.Nil(t, err)
 
 }
 
 func TestSubstRender(t *testing.T) {
-	createValuesFile(t)
+	createValuesFile(t, "foo=\"bar\"\n")
 
 	template := bytes.NewBufferString(`Testing {{.foo}}`)
 	output := bytes.NewBuffer(nil)
@@ -29,6 +29,20 @@ func TestSubstRender(t *testing.T) {
 	subst.Render()
 
 	assert.Equal(t, "Testing bar", output.String())
+}
+
+func TestSubstRenderEspecialChars(t *testing.T) {
+	createValuesFile(t, "foo=\"a + b\"\n")
+
+	template := bytes.NewBufferString(`Testing {{.foo}}`)
+	output := bytes.NewBuffer(nil)
+
+	subst, err := NewSubst("/tmp/values.toml", "toml", template, output)
+	assert.Nil(t, err)
+
+	subst.Render()
+
+	assert.Equal(t, "Testing a + b", output.String())
 }
 
 func TestSubstRender_NoValues(t *testing.T) {
