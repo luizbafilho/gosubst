@@ -1,0 +1,43 @@
+# github.com/Masterminds/sprig v0.0.0-20170223161724-2d2df7bd8bda
+## explicit
+github.com/Masterminds/sprig
+# github.com/aokoli/goutils v0.0.0-20140502001128-9c37978a95bd
+## explicit
+github.com/aokoli/goutils
+# github.com/davecgh/go-spew v1.1.0
+github.com/davecgh/go-spew/spew
+# github.com/inconshreveable/mousetrap v1.0.0
+## explicit
+github.com/inconshreveable/mousetrap
+# github.com/pelletier/go-buffruneio v0.1.0
+## explicit
+github.com/pelletier/go-buffruneio
+# github.com/pelletier/go-toml v0.4.0
+## explicit
+github.com/pelletier/go-toml
+# github.com/pkg/errors v0.8.0
+## explicit
+github.com/pkg/errors
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/satori/go.uuid v1.1.0
+## explicit
+github.com/satori/go.uuid
+# github.com/spf13/cobra v0.0.0-20170223131251-92ea23a837e6
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/pflag v0.0.0-20170130214245-9ff6c6923cff
+## explicit
+github.com/spf13/pflag
+# github.com/stretchr/testify v1.6.1
+## explicit
+github.com/stretchr/testify/assert
+# golang.org/x/crypto v0.0.0-20150218234220-1351f936d976
+## explicit
+golang.org/x/crypto/pbkdf2
+golang.org/x/crypto/scrypt
+# gopkg.in/yaml.v2 v2.0.0-20150924142314-53feefa2559f
+## explicit
+gopkg.in/yaml.v2
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3
