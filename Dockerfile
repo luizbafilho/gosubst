@@ -1,5 +1,3 @@
-FROM golang:1.9
+FROM golang:1.14
 
 RUN go get github.com/mitchellh/gox
-
-RUN go get github.com/Masterminds/glide
