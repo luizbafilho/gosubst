@@ -2,13 +2,13 @@ package gosubst
 
 import (
 	"encoding/json"
-	"text/template"
 	"io"
 	"io/ioutil"
 	"os"
 	"strings"
+	"text/template"
 
-	"github.com/Masterminds/sprig"
+	"github.com/Masterminds/sprig/v3"
 	"github.com/pelletier/go-toml"
 	"github.com/pkg/errors"
 
